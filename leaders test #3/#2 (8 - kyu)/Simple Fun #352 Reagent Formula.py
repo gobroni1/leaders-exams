@@ -9,6 +9,6 @@ def isValid(formula):
         return False
     else:
         return True
-
+#gobroni
 
                 

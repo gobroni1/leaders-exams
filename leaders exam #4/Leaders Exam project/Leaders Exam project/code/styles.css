@@ -1,0 +1,186 @@
+body {
+    background-color: azure;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.box {
+    height: 220px;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px black;
+    padding: 20px;
+    overflow: hidden;
+    color: white;
+    margin-right: 15px;
+}
+
+.purple {
+    background-color: rgb(153, 71, 231);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.status {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+
+}
+
+.content {
+    position: relative;
+}
+
+/* one man done  */
+
+.box3 {
+    height: 220px;
+    width: 250px;
+    position: relative;
+    background-color: rgb(102, 101, 101);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px black;
+    padding: 20px;
+    overflow: hidden;
+    color: white;
+}
+
+.dark-gray {
+    background-color: #666666;
+}
+
+.profile3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+.name3 {
+    font-weight: bold;
+    color: white;
+}
+
+.status3 {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.profile3 img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+
+}
+
+.content3 {
+    position: relative;
+}
+
+/* second man down */
+
+.box1wo {
+    margin-left: 15px;
+    width: 250px;
+    max-height: 460px;
+    background-color: rgb(102, 101, 101);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px black;
+    padding: 20px;
+    overflow: hidden;
+    color: rgb(105, 105, 105);
+}
+
+.white {
+    background-color: #fbfbfb;
+}
+
+.profile1wo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.name2wo {
+    font-weight: bold;
+}
+
+.status2wo {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.profile1wo img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+
+}
+
+.content {
+    position: relative;
+}
+
+/* first woman down */
+
+.box4 {
+    height: 220px;
+    width: 250px;
+    margin-top: 15px;
+    background-color: rgb(102, 101, 101);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px black;
+    padding: 20px;
+    overflow: hidden;
+    color: rgb(105, 105, 105);
+}
+
+
+.profile1wo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.name2wo {
+    font-weight: bold;
+}
+
+.status2wo {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.profile1wo img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+
+}
+
+.content {
+    position: relative;
+}

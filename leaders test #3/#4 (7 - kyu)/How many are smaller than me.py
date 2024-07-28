@@ -8,3 +8,4 @@ def smaller(arr):
                 count += 1
         arr2[i] = count
     return arr2
+#gobroni
