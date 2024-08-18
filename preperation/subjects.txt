@@ -1,0 +1,9 @@
+ sets 
+ tuples
+ list compherisons 
+ dictionary 
+ lambda 
+ args 
+ kwargs 
+ classes  
+ decorators
