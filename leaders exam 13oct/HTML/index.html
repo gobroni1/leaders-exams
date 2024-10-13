@@ -3,78 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>Register</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
         body {
-            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(225, 225, 225);
         }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
+        
+        .form-cont {
+            background-color: rgb(121, 121, 121);
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
         }
-
-        th, td {
-            border: 1px solid white;
-            padding: 8px;
+        
+        .reg-form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .reg-form h2 {
+            margin-bottom: 15px;
             text-align: center;
         }
-
-        td[contenteditable="true"] {
-            background-color: #f0f8ff;
+        
+        .reg-form label {
+            margin-bottom: 5px;
+        }
+        
+        .reg-form input[type="email"],
+        .reg-form input[type="password"] {
+            padding: 12px 15px;
+            margin-bottom: 18px;
+            border: 1px solid white;
+            border-radius: 8px;
+            outline: none;
+            font-size: 15px;
+            background-color: aqua;
+            transition: border 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .reg-form input[type="email"]:focus,
+        .reg-form input[type="password"]:focus {  
+            border: 1px solid brown;
+        }
+        
+        .checkbox-g {
+            margin-bottom: 15px;
+        }
+        
+        .checkbox-g label {
+            margin-left: 5px;
+            font-weight: normal;
+        }
+        
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: blue;
         }
     </style>
 </head>
 <body>
-    <h2>Table</h2>
+    <div class="form-cont">
+        <form id="reg-form" class="reg-form">
+            <h2>Register</h2>
 
-    <table id="editableTable">
-        <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-            <td>Cell 5</td>
-            <td>Cell 6</td>
-            <td>Cell 7</td>
-        </tr>
-        <tr>
-            <td>Cell 8</td>
-            <td>Cell 9</td>
-            <td>Cell 10</td>
-            <td>Cell 11</td>
-            <td>Cell 12</td>
-            <td>Cell 13</td>
-            <td>Cell 14</td>
-        </tr>
-        <tr>
-            <td>Cell 15</td>
-            <td>Cell 16</td>
-            <td>Cell 17</td>
-            <td>Cell 18</td>
-            <td>Cell 19</td>
-            <td>Cell 20</td>
-            <td>Cell 21</td>
-        </tr>
-    </table>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+
+            <label>Select Role</label>
+            <div class="checkbox-g">
+                <input type="checkbox" id="viewer" name="role" value="viewer">
+                <label for="viewer">Viewer</label>
+
+                <input type="checkbox" id="moderator" name="role" value="moderator">
+                <label for="moderator">Moderator</label>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
     
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const isModerator = localStorage.getItem('isModerator') === 'true';
+            const form = document.getElementById('reg-form');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); 
 
-            if (isModerator) {
-                const cells = document.querySelectorAll('td');
-                cells.forEach(cell => {
-                    cell.setAttribute('contenteditable', 'true');
-                });
-            } else {
-                const cells = document.querySelectorAll('td');
-                cells.forEach(cell => {
-                    cell.setAttribute('contenteditable', 'false'); 
-                });
-            }
+                const isModerator = document.getElementById('moderator').checked;
+
+                
+                localStorage.setItem("isModerator", isModerator);
+
+                
+                window.location.href = "table.html"; 
+            });
         });
     </script>
 </body>
