@@ -34,3 +34,6 @@ onAuthStateChanged(auth, (user) => {
         window.location.href = "./index.html"
     }
 });
+
+
+// if you see this code, it doesn't work so do not bother 
