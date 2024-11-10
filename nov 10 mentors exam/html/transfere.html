@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Funds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/transfere.css">
+</head>
+<body>
+    <header>
+        <div class="left"><a href="../index.html">&larr;</a></div>
+        <div class="right"><a href="./stats.html">&rarr;</a></div>
+    </header>
+
+    <img src="zloan.png" alt="transfer">
+    <h2 class="onimg"><a href="#main">Transfer Funds</a></h2>
+    <br><br>
+    <hr>
+    <br>
+    <div class="rules">
+        <h2>Terms of Service</h2>
+        <p>Welcome to the World’s Most Questionable Transfer Platform!
+
+            Congratulations! By stumbling upon this page, you’ve entered the thrilling realm of our dubious transfer service. Here’s a crash course in what you’re signing up for:
+            
+            We’re Totally Unqualified
+            Our team of experts consists of exactly zero finance professionals. That’s right—our credentials include mastering the art of procrastination and binge-watching cat videos. Proceed with caution.
+            
+            Aesthetics? What’s That?
+            If you’re expecting a sleek, modern design, you’re in for a treat! Our website was crafted with the utmost love and the latest 1998 web design trends. Our layout might just defy all conventional notions of symmetry. Be prepared for a visual rollercoaster!
+            
+            Enter At Your Own Risk
+            DO NOT enter any real card numbers, personal data, or secrets about your Aunt Mildred’s famous cookie recipe. We promise not to steal your identity… because we wouldn’t even know where to begin.
+            
+            The Fine Print (or Lack Thereof)
+            Our terms are so simple, they might not even exist. But hey, if you’re reading this, congratulations—you’ve already made it further than most. The fine print is basically invisible, just like our commitment to privacy.
+            
+            Unexpected Results
+            If you’re expecting actual transfers, you might be in the wrong place. Our services include occasional laughter, questionable advice, and a lot of fun. If you’re here for serious financial matters, we suggest calling your bank or maybe a magician.
+            
+            Legal Stuff
+            We have none. Our legal team consists of a rubber ducky and a forgotten notebook. If you need legal advice, consult someone who doesn’t have an inflatable friend as a colleague.</p>
+    </div>
+    <hr>
+    <br>
+    <div class="inputs">
+        <div class="input-group">
+            <label for="email"><b>Email</b></label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="password"><b>Password</b></label>
+            <input type="password" id="password" name="password" placeholder="########" maxlength="8" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="receiverEmail"><b>Receiver's Email</b></label>
+            <input type="email" id="receiverEmail" name="receiverEmail" placeholder="receiver@example.com" required>
+        </div>
+
+        <div class="input-group" id="main">
+            <label for="transferAmount"><b>Transfer Amount</b></label>
+            <input type="number" id="transferAmount" name="transferAmount" placeholder="Enter amount" required>
+        </div>
+        
+        <button id="submitTransfer">Submit Transfer</button>
+    </div>
+    <br>
+    <hr>
+
+    <script type="module" src="../js/transfere.js"></script>
+</body>
+</html>
