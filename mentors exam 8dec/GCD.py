@@ -1,9 +1,9 @@
-a = 10
-b = 19
-left = 0
-while b:
-    a, b = b, a % b
-print(a) 
+# a = 10
+# b = 19
+# left = 0
+# while b:
+#     a, b = b, a % b
+# print(a) 
 
 #-^^^^^^thinking--------
 

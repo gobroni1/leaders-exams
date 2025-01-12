@@ -1,4 +1,5 @@
 def anagram_check (s1, s2):
+    
     #make sure all word are lower case and have no gaps
     s1 = s1.lower().replace(" ", "")
     s2 = s2.lower().replace(" ", "")
@@ -8,3 +9,7 @@ def anagram_check (s1, s2):
 
 
 print(anagram_check("listen", "silent"))
+print(anagram_check("triangle", "integral"))
+print(anagram_check("apple", "pale"))
+print(anagram_check("a", "a"))
+print(anagram_check("rat", "car"))

@@ -9,7 +9,5 @@ def anagram_check (s1, s2):
 
 
 print(anagram_check("listen", "silent"))
-print(anagram_check("triangle", "integral"))
+print(anagram_check("hello", "world"))
 print(anagram_check("apple", "pale"))
-print(anagram_check("a", "a"))
-print(anagram_check("rat", "car"))

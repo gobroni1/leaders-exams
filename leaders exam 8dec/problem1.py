@@ -12,5 +12,5 @@ print(pos_sum([]))
 
 
 def pos_remastered (l2):
-    return sum([i for i in l2 if i > 0])
+    return sum([i for i in l2 if i > 0])#same but cooler 
 print(pos_remastered([1,-4,7,12]))

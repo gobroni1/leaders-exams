@@ -1,28 +1,28 @@
 def chek_sudoku (board):
-    if not all(board[row][col] != "0" for row in range(9) for col in range(9)):
+    if not all(board[row][col] != "0" for row in range(9) for col in range(9)):  #see if the board is full or not 
         return False
     
     for row in board:
-        if not check_sudoku2(row):
+        if not check_sudoku2(row):  #wery simple just iterate over rows 
             return False
             
     for col in range(9):
-        column = [board[row][col] for row in range(9)]
+        column = [board[row][col] for row in range(9)]   #iterating over list (beacause every row is a list) with spesific index (so you get every x index from every list giving you a row)
         if not check_sudoku2(column):
             return False
         
     for row in range (0,9,3):
-        for col in range(0,9,3):
+        for col in range(0,9,3):#this for loops are for 3 by 3 grids 
             by_3 = []
             for i in range(3):
                 for j in range(3):
                     by_3.append(board[row+i][col + j])
-            if not check_sudoku2(by_3):
+            if not check_sudoku2(by_3):              #by getting 3 by 3 grid numbers and passing them to dupes function we finde if there is any dupes in 3 by 3 areas 
                 return False
     return True
         
 def check_sudoku2 (n):
-    return len(n) == len(set(n))
+    return len(n) == len(set(n)) #this check for dupes using sets because they automaticly delete duplicats 
 
 
 print(chek_sudoku([[5, 3, 4, 6, 7, 8, 9, 1, 2],
