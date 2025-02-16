@@ -34,6 +34,7 @@ document.getElementById("delet").addEventListener("click", function() {
     let books = JSON.parse(localStorage.getItem("books")) || [];
     books.pop()
     localStorage.setItem("books", JSON.stringify(books));
+    location.reload();
 });
 
 window.onload = showBooks2;
