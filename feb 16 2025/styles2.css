@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column  ;
+}
+
+.second-main {
+    display: felx;
+    flex-direction: row;
+}
+
+.item-book {
+    background-color: black;
+    width: 60vh;
+    background-color: rgb(147, 30, 30);
+    border-radius:10px;
+    height: 10ch;
+    margin-top: 5px;
+    display: flex;
+}
+
+p,h3,h2{
+    margin-left: 10px;
+    font-size: medium;
+    margin-top:0;
+    color: white;
+    font-family:  "Oldenburg", serif;
+}
+
+button{
+    margin-left: 10px;
+    width: 10vh;
+    height: 5vh;
+
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(179, 0, 0);
+}
